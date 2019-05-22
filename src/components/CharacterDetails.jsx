@@ -31,15 +31,13 @@ const CharacterDetails = ({character, setCharacter}) => {
       inputValue={character.occupation}
       onChange={handleChange}
     />
-    <div className="CharacterDetails-level">
-      <label className="CharacterDetails-level-label">Level: </label>
-      <NumericalInput
-        name="level"
-        className="CharacterDetails-level-input"
-        value={character.level}
-        onChangeHandler={(event) => updateCharacter(event)(character, setCharacter)}
-      />
-    </div>
+    <NumericalInput
+      className="CharacterDetails-level"
+      inputName="level"
+      labelValue="Level: "
+      inputValue={character.level}
+      onChange={handleChange}
+    />
   </div>);
 };
 

@@ -6,7 +6,6 @@ const StringInput = ({className, inputName, labelValue, inputValue, onChange}) =
     <label className={`${className}-label`}>{labelValue}</label>
     <input
       name={inputName}
-      type="text"
       className={`${className}-input`}
       value={inputValue}
       onChange={onChange}
@@ -16,7 +15,7 @@ const StringInput = ({className, inputName, labelValue, inputValue, onChange}) =
 StringInput.propTypes = {
   classname: PropTypes.string,
   inputName: PropTypes.string,
-  labelValue: PropTypes.object,
+  labelValue: PropTypes.string,
   inputValue: PropTypes.string,
   onChange: PropTypes.func
 };
