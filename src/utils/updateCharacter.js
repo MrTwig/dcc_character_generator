@@ -1,3 +1,3 @@
-export const updateCharacter = (event) => (character, setCharacter) => {
+export const updateCharacter = (event, character, setCharacter) => {
   setCharacter({...character, [event.target.name]: event.target.value});
 };

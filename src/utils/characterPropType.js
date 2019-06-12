@@ -4,7 +4,7 @@ export const CharacterPropType = PropTypes.shape({
   name: PropTypes.string,
   alignment: PropTypes.string,
   occupation: PropTypes.string,
-  level: PropTypes.string,
+  level: PropTypes.number,
   abilityScores: PropTypes.shape({
     strength: PropTypes.number,
     agility: PropTypes.number,

@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import CharacterDetails from "./CharacterDetails";
+import AbilityScores from "./AbilityScores";
 
 const CharacterCard = () => {
   const base_character = {
     name: '',
     alignment: '',
     occupation: '',
-    level: '0',
+    level: 0,
     abilityScores: {
       strength: 0,
       agility: 0,
@@ -34,6 +35,7 @@ const CharacterCard = () => {
   return (
     <div className="CharacterCard">
       <CharacterDetails character={character} setCharacter={setCharacter}/>
+      <AbilityScores character={character} setCharacter={setCharacter}/>
     </div>
   );
 };
