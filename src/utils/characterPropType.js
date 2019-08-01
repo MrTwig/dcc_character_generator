@@ -4,14 +4,14 @@ export const CharacterPropType = PropTypes.shape({
   name: PropTypes.string,
   alignment: PropTypes.string,
   occupation: PropTypes.string,
-  level: PropTypes.number,
+  level: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   abilityScores: PropTypes.shape({
-    strength: PropTypes.number,
-    agility: PropTypes.number,
-    stamina: PropTypes.number,
-    personality: PropTypes.number,
-    intelligence: PropTypes.number,
-    luck: PropTypes.number
+    strength: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    agility: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    stamina: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    personality: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    intelligence: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    luck: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
   }),
   savingThrows: PropTypes.shape({
     reflex: PropTypes.number,
